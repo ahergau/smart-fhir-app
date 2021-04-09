@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
     res.render('app-page2', {
         layout: 'app-layout', 
         template: 'app',
-        title: 'Example FHIR App',
+        title: 'Smart FHIR App POC',
         patient: JSON.stringify(req.session.patient),
         patient_name: req.session.patient.name[0].text
     });

@@ -50,8 +50,10 @@ router.get('/', function (req, res, next) {
         params += `client_id=${settings.clientID}&`
         params += `redirect_uri=${settings.callbackUrl}&`
         params += `launch=${launch}&`
+        params += `state=abc123&`
         params += `aud=${issuer}&`
         params += `scope=${settings.scope}&`
+        //params += `scope=launch&`
         console.log(`Redirecting to ${req.session.authUrl}?${params}`)
         res.redirect(`${req.session.authUrl}?${params}`);
     })

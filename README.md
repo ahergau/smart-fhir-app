@@ -6,4 +6,11 @@
   - Launch URL: http://localhost:3000/launch
   - Redirect URL: http://localhost:3000/oauth-callback
 5. Click Launch App to launch
-6. If all works correctly you should see data pulled from Epic's example DB for the patient context you selected
+
+  Or
+  
+4. Login to https://code.cerner.com/developer/smart-on-fhir/apps and create sandbox app and update settings.
+  - Launch URL: http://localhost:3000/launch  
+  - Redirect URL: http://localhost:3000/oauth-callback
+5. Click on Begin testing
+6. If all works correctly you should see data pulled from Epic's or Cerner's example DB for the patient context you selected
